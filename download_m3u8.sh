@@ -34,5 +34,5 @@ do
         fi
 done
 
-ffmpeg -i playlist.m3u8 -c copy media.flv
+ffmpeg -user_agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/601.7.8 (KHTML, like Gecko) Version/9.1.3 Safari/537.86.7" -i playlist.m3u8 -bsf:a aac_adtstoasc -c copy media.flv
 rm *.ts
